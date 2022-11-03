@@ -40,11 +40,11 @@ There is a few steps:
 ## Confirming alarms
 RPI provides a simple website that looks like this:
 
-PHOTO
+![plot](images/website_ok.png)
 
 When something is wrong with the stability, the RPI will generate a button for specific station:
 
-PHOTO
+![plot](images/website_alarm.png)
 
 If we know the cause of the error we can confirm it, clicking the button next to specific station.
 
