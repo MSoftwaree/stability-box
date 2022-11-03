@@ -8,9 +8,9 @@ PHOTO
 
 ## Construction
 
-The box consist of 16 green LEDs and 16 red LEDs. So there is a possibility to verify 16 different stabiltiy stations. Every station have two LEDs: green - when everything is ok, red - when something went wrong. 
+The box consist of 16 green LEDs and 16 red LEDs. So there is a possibility to verify 16 different stability stations. Every station have two LEDs: green - when everything is ok, red - when something went wrong. 
 
-In the inside we can find the following elemnents:
+In the inside we can find the following elements:
 - **overcurrent switch** - to turn on/off the power
 - **24V DC power supply** - for SFAR devices
 - **5V DC power supply** - for RPI
@@ -20,7 +20,7 @@ In the inside we can find the following elemnents:
 
 ## How it works
 
-Code is working in the endless loop. In every 30 minutes reads the states of the test plans (test plans run every hour). If every test plan is PASSED, the green light in the specific station will be turn on. If at least one test will be FAILED, the red light in the specific station will be turn on until the user confirms on the website. 
+Code is working in the endless loop. In every 30 minutes reads the states of the test plans (test plans run every hour). If every test plan is PASSED, the green light in the specific station will be turn on. If at least one test will be FAILED, the red light in the specific station will be turn on until the user confirms it on the website. 
 
 The website is provided by RPI on the server, where every user has access. 
 
@@ -34,7 +34,7 @@ GIF
 
 There is a few steps:
 1. Add new station name in any empty station in file: *stability_control/stability_data_base/stability_config.json*
-2. Create a file with the same name in .json format in the folder: *stability_control/stability_data/base/stations/*
+2. Create a file with the same name in .json format in the folder: *stability_control/stability_data_base/stations/*
 3. From *stability_template.json" copy the content and paste it to the new file. FIll the name and list of test plans accordingly.
 
 ## Confirming alarms
