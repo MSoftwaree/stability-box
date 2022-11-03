@@ -1,0 +1,16 @@
+{
+   "RS485": {
+      "PORT_COM"        : "COM15",
+      "BAUDRATE"        : 115200,
+      "TIMEOUT"         : 5,
+      "PROTOCOL"        : "RTU",
+      "PARITY_BITS"     : "N",
+      "STOP_BITS"       : 1,
+      "DATA_BITS"       : 8
+   },
+
+   "SFAR_MODULES": {
+      "SFAR_GREEN"       : 1,
+      "SFAR_RED"         : 2
+   }
+}
