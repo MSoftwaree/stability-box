@@ -44,5 +44,3 @@ websocket-client==1.4.1
 wsproto==1.2.0
 zc.lockfile==2.0
 zipp==3.8.1
-
-git+http://git@gitlab.gc5.local/validationteam/python-librares/graphql_api@develop
