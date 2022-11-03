@@ -35,7 +35,7 @@ GIF
 There is a few steps:
 1. Add new station name in any empty station in file: *stability_control/stability_data_base/stability_config.json*
 2. Create a file with the same name in .json format in the folder: *stability_control/stability_data_base/stations/*
-3. From *stability_template.json" copy the content and paste it to the new file. FIll the name and list of test plans accordingly.
+3. From *stability_template.json* copy the content and paste it to the new file. FIll the name and list of test plans accordingly.
 
 ## Confirming alarms
 RPI provides a simple website that looks like this:
