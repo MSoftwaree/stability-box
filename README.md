@@ -30,7 +30,7 @@ The HTML file is generate in every 30 minutes, and also when user confirms the a
 
 ## LED diodes test
 
-GIF
+![plot](images/led_test.gif)
 
 ## Adding new stability station
 
