@@ -4,7 +4,7 @@
 
 The purpose of the box is reading test statuses from the JIRA (Xray plugin) and appropriate control of the LED diodes on the box. When we have a lot of test result it is easy to miss some important information. But that box will be hold the state if something is wrong on the stability tests until the user confirms it. 
 
-PHOTO
+![plot](images/outside.jpg)
 
 ## Construction
 
@@ -17,6 +17,8 @@ In the inside we can find the following elements:
 - **RPI** - used to run the box 24/7
 - **SFAR devices** - used to LEDs control
 - **USB/RS485 converter** - for communication between RPI and SFAR devices
+
+![plot](images/inside.jpg)
 
 ## How it works
 
