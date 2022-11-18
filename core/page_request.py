@@ -1,8 +1,18 @@
 import cherrypy
+from cherrypy.lib.static import serve_file
+import os
 
 
-@cherrypy.expose
-class PageRequest:
+class Root(object):
+
+    @cherrypy.expose
+    def index(self):
+        """ Return HTML file on initial web page """
+        return serve_file(os.path.abspath("control_page.html"))
+
+
+class PageRequest(object):
+    exposed = True
 
     def __init__(self, stab, page):
         self.page = page

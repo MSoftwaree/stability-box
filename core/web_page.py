@@ -57,7 +57,7 @@ class PageGenerator(object):
                         const elem = document.getElementById(station + '_ID');
                         elem.innerHTML = station + " - " + name + " - OK!";
                         elem.style.color = 'green';
-                        $.get("http://localhost:8080/", { station_name: id });
+                        $.get("http://192.168.67.142:8080/api", { station_name: id });
                     }
                     </script>"""
 
