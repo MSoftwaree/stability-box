@@ -1,6 +1,5 @@
 class PageGenerator(object):
     page_title = "Stability control"
-    logo = "https://www.ismacontrolli.com/pub/media/logo/stores/2/iSMACONTROLLI-logo-hd.png"
     title_margin = "160"
     stations_margin = "170"
     file_name = "control_page.html"
@@ -23,7 +22,6 @@ class PageGenerator(object):
         </head>
         <body>
             {self._script()}
-            <img src={self.logo} alt="">
             <h1 style="margin-left: {self.title_margin}px">{self.page_title}</h1>
             {self._station_information()}
         </body>
