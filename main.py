@@ -1,6 +1,7 @@
 from core.control import StabilityControl
 from core.web_page import PageGenerator
 from core.page_request import PageRequest, Root
+from datetime import datetime
 import cherrypy
 import cherrypy_cors
 import threading
@@ -38,6 +39,7 @@ def start_requests():
 requests = threading.Thread(target=start_requests)
 requests.start()
 
+print("Start running at:", datetime.now())
 while True:
     stab.update_stations_statuses()
     stab.activation_of_leds()
