@@ -50,6 +50,35 @@ When something is wrong with the stability, the RPI will generate a button for s
 
 If we know the cause of the error we can confirm it, clicking the button next to specific station.
 
+## Contributing 
+
+If Stability Box is off (e.g. after a power failure) there is a need to run the script. Follow the steps below:
+1. Login to RPI (ip: 192.168.67.142; port: 22, login: pi; password: raspberry)
+2. Start a new session:
+```
+tmux new -s stability
+```
+3. Go to project directory:
+```
+cd stability_control/
+```
+4. Run the script:
+```
+python main.py
+```
+5. If everything is ok you should see information similar like below:
+```
+Start running at: 2023-02-17 14:37:57.075151
+
+```
+
+If you need to check if the script is working properly, you can connect to an existing session using command below:
+```
+tmux attach-session -t stability
+```
+
+Tmux documentation: https://tmuxcheatsheet.com/ 
+
 ## In the future
 - add logger
 - add authorization for confirming alarms
