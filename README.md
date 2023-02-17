@@ -53,7 +53,7 @@ If we know the cause of the error we can confirm it, clicking the button next to
 ## Contributing 
 
 If Stability Box is off (e.g. after a power failure) there is a need to run the script. Follow the steps below:
-1. Login to RPI (ip: 192.168.67.142; port: 22, login: pi; password: raspberry)
+1. Login to RPI
 2. Start a new session:
 ```
 tmux new -s stability
