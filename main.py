@@ -41,7 +41,11 @@ requests.start()
 
 print("Start running at:", datetime.now())
 while True:
-    stab.update_stations_statuses()
-    stab.activation_of_leds()
-    page.generate_page()
-    time.sleep(1800)
+    try:
+        stab.update_stations_statuses()
+        stab.activation_of_leds()
+        page.generate_page()
+        time.sleep(1800)
+    except Exception as e:
+        print(f"{datetime.now()} - Something went wrong! Exception: {e}")
+
